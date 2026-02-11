@@ -1,86 +1,189 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Rasel - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                        },
+                        cyan: {
+                            400: '#36BCF7',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans min-h-screen flex flex-col items-center selection:bg-cyan-400 selection:text-slate-900">
 
-<!-- Typing SVG: Dynamic header that types out your roles -->
+    <!-- Main Container -->
+    <main class="w-full max-w-4xl px-4 py-12 md:py-20 space-y-16">
 
-<a href="https://www.google.com/search?q=https://git.io/typing-svg">
-<img src="https://www.google.com/search?q=https://readme-typing-svg.demolab.com%3Ffont%3DFira%2BCode%26weight%3D600%26size%3D28%26pause%3D1000%26color%3D36BCF7%26center%3Dtrue%26vCenter%3Dtrue%26width%3D500%26lines%3DHi%252C%2BI%27m%2BMohammad%2BRasel%3BFull%2BStack%2BPHP%2BDeveloper%3BMVP%2BBuilder%3BSystem%2BAutomation%2BArchitect" alt="Typing SVG" />
-</a>
+        <!-- Hero Section -->
+        <section class="text-center space-y-6 animate-fade-in">
+            <div class="inline-block p-1 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
+                <div class="bg-slate-900 rounded-full p-1">
+                     <!-- You can replace this src with your actual avatar URL -->
+                    <img src="https://ui-avatars.com/api/?name=Mohammad+Rasel&background=0D1117&color=36BCF7&size=128" alt="Mohammad Rasel" class="w-32 h-32 rounded-full border-4 border-slate-900 shadow-2xl">
+                </div>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Mohammad Rasel</span>
+            </h1>
 
-<!-- The Hook -->
+            <!-- Typing Effect Wrapper -->
+            <div class="h-12 flex items-center justify-center">
+                <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Full+Stack+PHP+Developer;MVP+Builder;System+Automation+Architect" alt="Typing Text" />
+            </div>
 
-<h3>
-<i>"Turning complex business logic into automated, scalable systems."</i>
-</h3>
+            <p class="text-xl text-slate-400 italic font-light max-w-2xl mx-auto">
+                "Turning complex business logic into automated, scalable systems."
+            </p>
 
-<a href="https://www.google.com/search?q=https://raseloriginal.digital" target="_blank">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Portfolio-raseloriginal.digital-2ea44f%3Fstyle%3Dfor-the-badge%26logo%3Dgooglechrome%26logoColor%3Dwhite" alt="Portfolio" />
-</a>
+            <div class="pt-4">
+                <a href="https://raseloriginal.digital" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(56,188,247,0.3)]">
+                    <i class="fas fa-globe"></i> Visit Portfolio
+                </a>
+            </div>
+        </section>
 
-</div>
+        <!-- About Section -->
+        <section class="bg-slate-850 rounded-2xl p-8 border border-slate-700/50 shadow-xl animate-slide-up" style="animation-delay: 0.2s;">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-2xl">🚀</span>
+                <h2 class="text-2xl font-bold text-white">About Me</h2>
+            </div>
+            <div class="space-y-4 text-lg leading-relaxed">
+                <p>
+                    I am a <strong class="text-cyan-400">Full Stack PHP Developer</strong> and <strong class="text-cyan-400">System Automation Architect</strong> focused on building MVPs that solve real business problems. My passion lies in streamlining operations through custom software and removing manual bottlenecks from workflows.
+                </p>
+                <ul class="space-y-3 mt-4">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 text-cyan-400">🔭</span>
+                        <span><strong>Currently working on:</strong> A custom <span class="text-slate-100">Inventory & Staff Management System</span>.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 text-green-400">🌱</span>
+                        <span><strong>Currently learning:</strong> The <span class="text-slate-100">MERN Stack</span> (MongoDB, Express, React, Node.js) to expand my architectural capabilities.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 text-yellow-400">💡</span>
+                        <span><strong>Specialty:</strong> Rapid MVP development and Business Automation.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-🚀 About Me
+        <!-- Tech Stack Section -->
+        <section class="space-y-6 animate-slide-up" style="animation-delay: 0.4s;">
+            <div class="flex items-center gap-3 mb-2 justify-center">
+                <span class="text-2xl">🛠️</span>
+                <h2 class="text-2xl font-bold text-white">Tech Stack & Tools</h2>
+            </div>
+            
+            <div class="grid gap-6 md:grid-cols-2">
+                <!-- Backend -->
+                <div class="bg-slate-850 p-6 rounded-xl border border-slate-700/50">
+                    <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-700 pb-2">Core & Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700/50 text-indigo-300 rounded-lg border border-indigo-500/20 text-sm font-medium flex items-center gap-2"><i class="fab fa-php"></i> PHP</span>
+                        <span class="px-3 py-1 bg-slate-700/50 text-blue-300 rounded-lg border border-blue-500/20 text-sm font-medium flex items-center gap-2"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="px-3 py-1 bg-slate-700/50 text-yellow-300 rounded-lg border border-yellow-500/20 text-sm font-medium flex items-center gap-2"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
 
-I am a Full Stack PHP Developer and System Automation Architect focused on building MVPs that solve real business problems. My passion lies in streamlining operations through custom software and removing manual bottlenecks from workflows.
+                <!-- Frontend -->
+                <div class="bg-slate-850 p-6 rounded-xl border border-slate-700/50">
+                    <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-700 pb-2">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700/50 text-orange-300 rounded-lg border border-orange-500/20 text-sm font-medium flex items-center gap-2"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="px-3 py-1 bg-slate-700/50 text-blue-300 rounded-lg border border-blue-500/20 text-sm font-medium flex items-center gap-2"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="px-3 py-1 bg-slate-700/50 text-teal-300 rounded-lg border border-teal-500/20 text-sm font-medium flex items-center gap-2"><i class="fas fa-wind"></i> Tailwind</span>
+                        <span class="px-3 py-1 bg-slate-700/50 text-blue-200 rounded-lg border border-blue-400/20 text-sm font-medium">jQuery</span>
+                    </div>
+                </div>
 
-🔭 Currently working on: A custom Inventory & Staff Management System.
+                <!-- Tools -->
+                <div class="bg-slate-850 p-6 rounded-xl border border-slate-700/50 md:col-span-2">
+                    <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-700 pb-2">Tools & Other</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700/50 text-red-300 rounded-lg border border-red-500/20 text-sm font-medium flex items-center gap-2"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="px-3 py-1 bg-slate-700/50 text-purple-300 rounded-lg border border-purple-500/20 text-sm font-medium flex items-center gap-2"><i class="fas fa-atom"></i> Antigravity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-🌱 Currently learning: The MERN Stack (MongoDB, Express, React, Node.js) to expand my architectural capabilities.
+        <!-- GitHub Stats Section -->
+        <section class="space-y-8 animate-slide-up" style="animation-delay: 0.6s;">
+            <div class="text-center">
+                <div class="flex items-center gap-3 mb-6 justify-center">
+                    <span class="text-2xl">📊</span>
+                    <h2 class="text-2xl font-bold text-white">GitHub Activity</h2>
+                </div>
+                
+                <!-- NOTE: Replace 'YOUR_GITHUB_USERNAME' in the URLs below with your actual username -->
+                <div class="grid md:grid-cols-2 gap-4">
+                    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=151e2e&title_color=36BCF7&icon_color=36BCF7" 
+                         alt="GitHub Stats" 
+                         class="w-full h-auto rounded-xl shadow-lg hover:shadow-cyan-900/20 transition-shadow">
+                    
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=151e2e&title_color=36BCF7" 
+                         alt="Top Languages" 
+                         class="w-full h-auto rounded-xl shadow-lg hover:shadow-cyan-900/20 transition-shadow">
+                </div>
+                
+                <div class="mt-4">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true&background=151e2e&ring=36BCF7&currStreakLabel=36BCF7" 
+                         alt="GitHub Streak" 
+                         class="w-full h-auto rounded-xl shadow-lg">
+                </div>
+            </div>
+        </section>
 
-💡 Specialty: Rapid MVP development and Business Automation.
+        <!-- Footer -->
+        <footer class="border-t border-slate-800 pt-8 text-center animate-slide-up" style="animation-delay: 0.8s;">
+            <p class="text-slate-500 mb-4">Connect with me</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://raseloriginal.digital" class="p-3 bg-slate-800 hover:bg-cyan-500 hover:text-slate-900 rounded-full transition-colors duration-300 text-cyan-400">
+                    <i class="fas fa-globe text-xl"></i>
+                </a>
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" class="p-3 bg-slate-800 hover:bg-slate-700 rounded-full transition-colors duration-300 text-white">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <!-- Add more social links here -->
+            </div>
+            <p class="mt-8 text-sm text-slate-600">
+                &copy; <script>document.write(new Date().getFullYear())</script> Mohammad Rasel. All rights reserved.
+            </p>
+        </footer>
 
-🛠️ Tech Stack & Tools
+    </main>
 
-<div align="center">
-
-<!-- Backend & Core -->
-
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/php-%2523777BB4.svg%3Fstyle%3Dfor-the-badge%26logo%3Dphp%26logoColor%3Dwhite" alt="PHP" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/mysql-%252300f.svg%3Fstyle%3Dfor-the-badge%26logo%3Dmysql%26logoColor%3Dwhite" alt="MySQL" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/javascript-%2523323330.svg%3Fstyle%3Dfor-the-badge%26logo%3Djavascript%26logoColor%3D%2523F7DF1E" alt="JavaScript" />
-
-<!-- Frontend -->
-
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/html5-%2523E34F26.svg%3Fstyle%3Dfor-the-badge%26logo%3Dhtml5%26logoColor%3Dwhite" alt="HTML5" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/css3-%25231572B6.svg%3Fstyle%3Dfor-the-badge%26logo%3Dcss3%26logoColor%3Dwhite" alt="CSS3" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/tailwindcss-%252338B2AC.svg%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" alt="TailwindCSS" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/jquery-%25230769AD.svg%3Fstyle%3Dfor-the-badge%26logo%3Djquery%26logoColor%3Dwhite" alt="jQuery" />
-
-<!-- Tools & Other -->
-
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/git-%2523F05033.svg%3Fstyle%3Dfor-the-badge%26logo%3Dgit%26logoColor%3Dwhite" alt="Git" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Antigravity-000000.svg%3Fstyle%3Dfor-the-badge%26logo%3Datom%26logoColor%3Dwhite" alt="Antigravity" />
-
-</div>
-
-📊 GitHub Stats
-
-<div align="center">
-
-<!--
-IMPORTANT: Replace 'YOUR_GITHUB_USERNAME' with your actual GitHub username below!
--->
-
-<a href="https://www.google.com/search?q=https://github.com/YOUR_GITHUB_USERNAME">
-<img height="180em" src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3DYOUR_GITHUB_USERNAME%26show_icons%3Dtrue%26theme%3Dtokyonight%26hide_border%3Dtrue%26bg_color%3D0D1117%26title_color%3D36BCF7%26icon_color%3D36BCF7" alt="Rasel's GitHub Stats" />
-</a>
-
-<a href="https://www.google.com/search?q=https://github.com/YOUR_GITHUB_USERNAME">
-<img height="180em" src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3DYOUR_GITHUB_USERNAME%26layout%3Dcompact%26theme%3Dtokyonight%26hide_border%3Dtrue%26bg_color%3D0D1117%26title_color%3D36BCF7" alt="Top Languages" />
-</a>
-
-</div>
-
-<div align="center">
-<img src="https://www.google.com/search?q=https://github-readme-streak-stats.herokuapp.com/%3Fuser%3DYOUR_GITHUB_USERNAME%26theme%3Dtokyonight%26hide_border%3Dtrue%26background%3D0D1117%26ring%3D36BCF7%26currStreakLabel%3D36BCF7" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-
-<p>Connect with me:</p>
-
-<a href="https://www.google.com/search?q=https://raseloriginal.digital">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Website-raseloriginal.digital-2ea44f%3Fstyle%3Dflat-square%26logo%3Dgoogle-chrome%26logoColor%3Dwhite" alt="Website" />
-</a>
-<!-- Add LinkedIn or Twitter here if you have them later -->
-
-</div>
+</body>
+</html>
